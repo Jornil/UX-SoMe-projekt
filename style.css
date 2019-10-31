@@ -1,0 +1,69 @@
+body {
+    background-color: #D2D904;
+    margin: 0;
+    padding: 0:
+    font-size: 16pt;
+    font-family: sans-serif;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #fff;
+  color: #5B2473;
+  font-size: 30px;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+#container {
+  width: 900px;
+  height: auto;
+  margin: 100px;
+  margin-left: 400px;
+}
+
+.row {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #AFAFAF;
+  color: #5B2473;
+}
+
+.name {
+  position: relative;
+  display: inline-block;
+  width: 65%;
+  line-height: 65px;
+}
+
+.score {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+}
+
+.row:nth-child(1) {
+  background: #fff;
+  font-size: 24px;
+  color:#5B2473;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #5B2473;
+   color: white;
+   text-align: center;
+}

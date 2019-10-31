@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!--Language set to English. Change to da for Danish if needed-->
+
+<head>
+    <meta charset="UTF-8">
+    <!--This ensures that the browser can read special signs and characters like the Danish letters æ, ø, å -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <!--This helps avoid that a site displays differently with different screen resolutions -->
+    <title>document</title>
+    <!--This title will be the heading on google search and on the tab in the browser. Can contain up to 70 characters-->
+    <meta name="description" content="På denne side finder du informationer om... ">
+    <meta name="keywords" content="">
+    <!-- this is for search engne optimization - fill in description of the page content. This will usually be the text shown under the heading in a search. Can contain up to 155 characters-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--This is a link to the stylesheet. Any rule written in the stylesheet will be used for this page -->
+
+</head>
+
+<body onclick="myFunction()">
+  <div class="header">
+    <h1>Scoreboard</h1>
+  </div>
+
+  <div id="container"></div>
+
+
+<div class="footer">
+  <p>Sejt Marie!</p>
+</div>
+
+<script>
+
+var fruits = [
+  '<div class="row"><img src="images/dovndyr1.png" alt="Dovndyr" class="avatar"><div class="name">Camilla</div><div class="score">7:15</div></div>',
+  '<div class="row"><img src="images/abe1.png" alt="Abe" class="avatar"><div class="name">Marie</div><div class="score">3:44</div></div>',
+  '<div class="row"><img src="images/bjørn1.png" alt="Bjørn" class="avatar"><div class="name">Frederik</div><div class="score">5:31</div></div>',
+  '<div class="row"><img src="images/lemur1.png" alt="Lemur" class="avatar"><div class="name">Mathias</div><div class="score">7:25</div></div>',
+  '<div class="row"><img src="images/panda1.png" alt="Panda" class="avatar"><div class="name">Katrine</div><div class="score">9:08</div></div>',
+  '<div class="row"><img src="images/vaskebjørn1.png" alt="Vaskebjørn" class="avatar"><div class="name">Kasper</div><div class="score">10:34</div></div>'
+];
+
+document.getElementById("container").innerHTML = fruits;
+
+function myFunction() {
+  fruits.sort();
+  document.getElementById("container").innerHTML = fruits;
+}
+
+</script>
+
+</body>
+</html>
