@@ -4,30 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel = "stylesheet" type = "text/css" href = "style/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <title>dyr</title>
 </head>
-<body>
+<body class="graa-bg">
+
 
 <button onclick="goBack()">Go Back</button>
 
 
 
 
-<!-- find den fra kasse fra streetfood -->
 
+<div id=boxcontainer>
+<form action="route.html" method="GET">
+    <input type="image" class=dyr src="image/dovndyr.png" alt="dyr">
+    <input type="image" class=dyr src="image/bjørn.png" alt="dyr">
+    <input type="image" class=dyr src="image/lemur.png" alt="dyr">
+    <input type="image" class=dyr src="image/panda.png" alt="dyr">
+    <input type="image" class=dyr src="image/vaskebjørn.png" alt="dyr">
+    <input type="image" class=dyr src="image/abe.png" alt="dyr">
+</form>
+</div>
 
-
-
-
-
-
-<a class=okay href="route.html">Okay</a>
 
 <script>
 function goBack() {
-window.history.back()
+    history.go(-1);
 }
-});
 </script>
+
 </body>
 </html>

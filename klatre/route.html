@@ -8,27 +8,29 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <title>Router</title>
 </head>
-<body>
+<body class="graa-bg">
 
 <!-- <input type="button" value="Back" onclick="goBack()"> -->
 
 <button onclick="goBack()">Go Back</button>
 
-<div class=router>
 <!-- Knapper -->
 
-<div id="vores-baner" <a href="vores-baner.html"> <img src="image/vaelg-bane.png"></a></div>
+<div id=valgafroute>
+<form action="vores-baner.html" method="GET">
+    <input type="image" class=router src="image/vaelg-bane.png" alt="vaelg bane">
+</form>
 
-<div id="byg-selv" <a href="byg-selv.html"> <img src="image/byg-selv.png"></a></div>
+<form action="byg-selv.html" method="GET">
+    <input type="image" class=router src="image/byg-selv.png" alt="byg selv">
+</form>
 
-</div>
-
-  <script>
-  function goBack() {
-  window.history.back()
+<script>
+function goBack() {
+    history.go(-1);
 }
-});
-  </script>
+</script>
+
 
 </body>
 </html>

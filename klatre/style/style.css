@@ -1,16 +1,118 @@
 html, body {
   margin: 0;
   border: 0;
+  height: 100vh;
+  /* Tablet size
   width: 2560px;
   height: 1600px;
-  background-color: green;
+  */
+  background-color: white;
   font-family: 'SourceSans', sans-serif;
   font-size:25pt;
 }
 
 
+/* ---INDEX.HTML--- */
 
-.okay {
+body.index-bg {
+  background-image: url(../image/test.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#player {
+  position: relative;
+  margin-left: 1000px;
+
+  padding-top: 200px;
+
+}
+
+  /* Okay knap */
+  .okay {
+    position: relative;
+    background-color: #642e7e; /* Lilla */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+#logo {
+  position: absolute;
+  margin: 10px;
+}
+
+#navn {
+margin-left: 800px;
+margin-top: 50px;
+}
+
+
+/* figur */
+
+body.graa-bg {
+background-image: url(../image/bg.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+
+/* flexbox dyr */
+#boxcontainer {
+    position: relative;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    flex-wrap: wrap;
+    height: 800px;
+    width: 1500px;
+    margin-left:500px;
+    margin-top:50px;
+}
+
+#boxcontainer .dyr {
+  width: 30%;
+}
+
+/* ROUTE.HTML */
+
+
+#valgafroute {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  height: 600px;
+  width: 1600px;
+  margin-left:299px;
+  margin-top:40px;
+  }
+
+#router .router {
+  width:50%;
+
+}
+/* VORES-BANER.HTML */
+
+body.vores-bg {
+background-image: url(../image/byg-bane.jpg);
+background-repeat: no-repeat;
+margin-left:300px;
+}
+
+/* BYG-SELV.HTML */
+body.byg-bg {
+background-image: url(../image/byg-bane.jpg);
+background-repeat: no-repeat;
+margin-left:400px;
+}
+
+.ok {
   background-color: #642e7e; /* Lilla */
   border: none;
   color: white;
@@ -19,42 +121,13 @@ html, body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  margin-left: 540px;
+  margin-top: 780px;
 }
 
-/* INDEX.HTML */
+/* TILLYKKE.HTML */
 
-body {
-  background-image: url("../image/test.jpg");
-  background-position: center;
+body.tillykke-bg {
+  background-image: url(../image/tillykke-bg.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
-  }
-
-#logo {
-margin: 50px;
 }
-
-#navn {
-margin-left: 1180px;
-margin-top: 200px;
-}
-
-input {
-font-size: 25px;
-width: 300px;
-height: 30px;
-}
-
-
-/* ROUTE.HTML */
-
-
-.router {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  }
-
-
-
-/* VORES-BANER.HTML */

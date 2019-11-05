@@ -9,43 +9,66 @@
   <title>DGI Klatring</title>
 </head>
 
-<body>
+<body class="index-bg">
 
 
 <img id=logo src="image/dgi-huset.png" alt="DGI logo">
 
 
 
+<div id="player"></div>
 
-<!-- NAME input -->
-<!-- HVIS INDTASTNINGEN AF NAVN SKAL VÆRE POP-UP
-https://www.youtube.com/watch?v=k9m81dkOeL0&t=44s -->
-
-
-<!--
-<button type="button" id="popup-knap" title="Klik mig for at intaste dit navn"
-</button>
-Test
--->
 <div id=navn>
   <form>
     <table>
       <tr>
         <td>
-            Navn :
-        </td>
-        <td>
             <input type="text" placeholder="Navn" name="">
         </td>
       </tr>
       <td>
-      <a class=okay href="route.html">Okay</a>
+      <a class=okay href="figur.html">Okay</a>
     </td>
     </table>
   </form>
 </div>
 
+<script>
+      // Denne kode indlæser IFrame Player API-koden
+      var tag = document.createElement('script');
 
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // Denne funktion laver en iframe/youtube player
+      // Ved videoID har vi brugt id'en på den video vi
+      // uploaded på youtube
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'KsiM9x7xHk0',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+
+          done = true;
+        }
+      }
+    </script>
 
 
 </body>
